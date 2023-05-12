@@ -1,6 +1,7 @@
 let inp = document.getElementsByClassName("htmldata")[0];
 let bgcol = document.getElementsByClassName("capturecolor")[0];
 let frame = document.getElementsByClassName("frame")[0];
+let body = document.querySelector("body");
 function sleep(milliseconds) {
   const date = Date.now();
   let currentDate = null;
@@ -29,6 +30,7 @@ bgcol.addEventListener("input", async function() {
 
 document.getElementsByClassName("recordbutton")[0].addEventListener("click",async function() {
     try {
+        body.style.transform = "translateY(-150px)";
         frame.innerHTML = inp.value;
         frame.style="width: "+document.getElementsByClassName("capturewidth")[0].value+"px; height: "+document.getElementsByClassName("captureheight")[0].value+"px; background-color: "+bgcol.value+";";
         sleep(1000);
@@ -54,8 +56,9 @@ document.getElementsByClassName("recordbutton")[0].addEventListener("click",asyn
             chunks = [];
           };
         mediaRecorder.start();
-        setTimeout(() => { mediaRecorder.stop(); }, 1000*Number(document.getElementsByClassName("capturelength")[0].value));
+        setTimeout(() => { mediaRecorder.stop(); body.style.transform = ""; }, 1000*Number(document.getElementsByClassName("capturelength")[0].value));
       } catch (err) {
+        body.style.transform = "";
         console.log(err);
       }
 });
