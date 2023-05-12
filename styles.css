@@ -7,6 +7,9 @@ body {
         display: flex;
         background-color: #6C70F5;
         align-items: center;
+        .icon {
+            margin: 10px;
+        }
         .htmldata {
             height: 50%;
             background-color: #AE57DE;
