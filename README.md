@@ -1,7 +1,7 @@
 # Element2WEBM
 This tool ✨magically✨ converts any HTML element into a .webm video file. Could perhaps be used when you want animations while loading things in the background. In such situations you shouldn't handle animations on the CPU and instead run them in parallel on the GPU (this could otherwise cause animations to stutter).
 
-**IMPORTANT:** Check tests section to see if your browser is supported.
+**IMPORTANT:** See tests section to check if your browser is supported.
 
 **HOW TO USE**
 1. Go to https://zyberdev.github.io/element2webm/.
