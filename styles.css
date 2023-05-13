@@ -118,6 +118,7 @@ body {
             color: var(--highlight);
             outline: none;
             font-family: monospace;
+            cursor: pointer;
         }
         .recordbutton {
             width: 70px;
