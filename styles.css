@@ -42,8 +42,9 @@ body {
             color: var(--highlight);
             outline: none;
             margin: 10px;
-            text-align: center;
             font-family: monospace;
+            resize: none;
+            overflow: hidden;
         }
         .widthlabel {
             text-align: center;
@@ -134,6 +135,7 @@ body {
             font-size: 15px;
             transition: 250ms cubic-bezier(0.41, 2.2, 0.58, 1);
             user-select: none;
+            cursor: pointer;
         }
         .recordbutton:hover {
             transform: rotate(10deg) scale(0.9);
