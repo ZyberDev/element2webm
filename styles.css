@@ -13,6 +13,9 @@ input::-webkit-inner-spin-button {
 input[type=number]{
     -moz-appearance: textfield;
 }
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
 
 body {
     margin: 0;
@@ -59,7 +62,7 @@ body {
             color: var(--highlight);
             outline: none;
             font-family: monospace;
-            appearance: auto;
+            text-align: center;
         }
         .heightlabel {
             text-align: center;
@@ -78,7 +81,7 @@ body {
             color: var(--highlight);
             outline: none;
             font-family: monospace;
-            appearance: none;
+            text-align: center;
         }
         .lengthlabel {
             text-align: center;
@@ -97,7 +100,7 @@ body {
             color: var(--highlight);
             outline: none;
             font-family: monospace;
-            appearance: none;
+            text-align: center;
         }
         .colorlabel {
             text-align: center;
@@ -107,7 +110,7 @@ body {
             user-select: none;
         }
         .capturecolor {
-            width: 90px;
+            width: 100%;
             border-radius: 100px;
             border: solid;
             border-width: 2px;

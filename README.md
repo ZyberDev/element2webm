@@ -5,7 +5,7 @@ This tool ✨magically✨ converts any HTML element into a .webm video file. Cou
 
 **HOW TO USE**
 1. Go to https://zyberdev.github.io/element2webm/.
-2. Paste ✨HTML element of choice✨ into the big purple box that says "HTML goes here".
+2. Paste ✨HTML element of choice✨ into the big box that says "HTML goes here".
 3. Enter desired width and height of output video (in pixels) into the "width" and "height" inputs. NOTE: You may want to scale your element up or down to fit the new resolution.
 4. Enter the video length (in seconds) into the "time" input. If the element is animated, enter the amount of time it takes for the animation to finish.
 5. This tool currently doesn't support transparent background colors, so enter a background color value into the "background" input (css color value or hex).
