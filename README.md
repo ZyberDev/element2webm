@@ -11,9 +11,9 @@ This tool ✨magically✨ converts any HTML element into a .webm video file. Cou
 5. This tool currently doesn't support transparent background colors, so pick a background color with the "background" input.
 6. Click record.
 7. A box asking what you want to capture will show up, click this tab and then click "share". Do not hover your mouse over the element while recording, that will mess up the output.
-8. DONE! If everything has worked out properly you will now get a "recorded element.webm" downloaded.
+8. DONE! If everything has worked properly you will now get a "recorded element.webm" downloaded.
 
 **TESTS**
-- Chrome - Works, but output video has no metadata.
+- Chrome - Works
 - Edge - Does not work.
 - Opera - Does not work.
