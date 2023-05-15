@@ -11,7 +11,7 @@ function sleep(milliseconds) {
 }
 
 function saveFile(chunks){
-   const blob = new Blob(chunks, {
+    const blob = new Blob(chunks, {
       type: 'video/webm'
     });
     let downloadLink = document.createElement('a');
@@ -45,7 +45,7 @@ document.getElementsByClassName("recordbutton")[0].addEventListener("click",asyn
         }
         frame.innerHTML = inp.value;
         let chunks = [];
-        const mediaRecorder = new MediaRecorder(stream);
+        const mediaRecorder = new MediaRecorder(stream, {mimeType: 'video/webm; codecs:"vp9"'});
         mediaRecorder.ondataavailable = function (e) {
             if (e.data.size > 0) {
               chunks.push(e.data);
@@ -55,7 +55,7 @@ document.getElementsByClassName("recordbutton")[0].addEventListener("click",asyn
             saveFile(chunks);
             chunks = [];
           };
-        mediaRecorder.start();
+        mediaRecorder.start(1);
         setTimeout(() => { mediaRecorder.stop(); body.style.transform = ""; }, 1000*Number(document.getElementsByClassName("capturelength")[0].value));
       } catch (err) {
         body.style.transform = "";
